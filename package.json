@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack -w & nodemon server/app.js --ignore public",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "sh ./scripts/deploy.sh"
+    "deploy": "sh ./scripts/deploy.sh",
+    "heroku-postbuild": "webpack --config webpack.prod.js"
   },
   "author": "",
   "license": "ISC",
